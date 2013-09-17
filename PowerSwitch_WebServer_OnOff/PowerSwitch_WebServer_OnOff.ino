@@ -83,7 +83,7 @@ void fanCmd(WebServer &server, WebServer::ConnectionType type, char *url_tail, b
 void setup()
 {
   Ethernet.begin(MAC);
-  pinMode(7, OUTPUT); 
+  pinMode(POWERPIN, OUTPUT); 
   webserver.setDefaultCommand(&fanCmd);
   webserver.begin();
 }
